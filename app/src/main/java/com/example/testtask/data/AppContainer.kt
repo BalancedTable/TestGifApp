@@ -9,7 +9,7 @@ interface AppContainer {
 }
 
 class DefaultAppContainer: AppContainer{
-    private val baseURL = "https://api.giphy.com/"// вставить ссылку на гифки
+    private val baseURL = "https://api.giphy.com/"
 
     private val retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())

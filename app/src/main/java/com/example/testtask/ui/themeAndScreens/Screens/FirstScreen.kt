@@ -1,10 +1,8 @@
 package com.example.testtask.ui.themeAndScreens.Screens
 
 import com.example.testtask.R
-import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.aspectRatio
@@ -69,16 +67,6 @@ fun ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier){
         Button(onClick = retryAction) {
             Text(stringResource(R.string.retry))
         }
-    }
-}
-
-@Composable
-fun ResultScreen(gifs: String, modifier: Modifier = Modifier){
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = modifier
-    ){
-        Text(text = gifs)
     }
 }
 
